@@ -1,0 +1,255 @@
+---
+title: {{ title }}
+date: {{ date }}
+layout: false
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人简历</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/resume.css">
+</head>
+<body>
+	<div class="title">
+			<h1>简历</h1>
+	</div>
+
+	<div class="grid">
+		<header>
+			<div class="flex">
+				<img class="personal" src="../imgs/me.jpg" alt="证件照">
+				<div class="info">
+					<h1>梁志宇</h1>
+					<ul class="contact">
+			      <li>
+			        Email: somebodylzy@qq.com
+			      </li>
+			      <li>
+			        Web:
+			        <a href="https://liang200018.github.io/about">https://liang200018.github.io/about</a>
+			      </li>
+			      <li>Tel: 17396124219</li>
+				</div>
+			</div>
+
+
+		</header>
+		
+		<main>
+			<section class="work_experience">
+				<h2>项目经历</h2>
+				<article>
+	        <p class="project">
+	          区域车货匹配策略迭代
+	        </p>  
+	        <span class="company">江苏满运软件科技有限公司</span>
+	        <span class="period">2022年07月 - 2024年02月</span>
+	        <ul>
+	            <li>参与了公司重点项目中台司机精准列表、司机首页排序、优车流量调控。</li>
+	            <li>使用Java CompletableFuture异步并发优化IO请求，优化触达决策链路性能和成功率。</li>
+	            <li>业务优化：司机首页排序中，使用Redis缓存司机的货源列表，同时命中缓存时检查剩余时间判断是否触发更新，减少业务高峰期司机短时间内频繁刷新导致链路失败率高，减少排序降级影响成交率。</li>
+	            <li>项目重构：搭建增强触达决策中心，触达频控使用Redis实现，使用MongoDB保存派单决策上下文中持久信息，减少对数据接口的频繁请求。<b>完成区域算法触达能力的统一化，优化研发效能</b>。</li>
+	            <li>通过JVM垃圾回收指标分析应用YoungGC频繁原因，分析结论由于临时大对象多，导致年轻代对象生成速度比较快，从而导致频繁回收，导致接口劣化。通过调大年轻代空间解决。</li>
+	         </ul>
+	      </article>
+
+	      <article>
+	        <p class="project">统一入数系统迭代</p>
+	        <span class="company">秒针信息技术有限公司</span>  
+	        <span class="period">2024年02月 - 2024年06月</span>
+	        <ul>
+	            <li>数据业务逻辑开发：加工不同供应商提供的社媒爬虫数据，经过标准的ETL加工处理后，写入数据仓库。</li>
+	            <li>底层数据接入，完善数据流编排引擎基础组件。</li>
+	            <li>数据平台运维。负责统一入数平台NIFI集群的稳定性。</li>
+	          </ul>
+	      </article>
+			</section>
+
+			<aside>
+				<div class="postion_applied">
+					<h2>意向岗位</h2>
+					<ul>
+						<li>Java工程师</li>
+						<li>数据开发工程师</li>
+						<li>全栈工程师</li>
+					</ul>
+				</div>
+				<div class="ideal_industry">
+					<h2>偏向行业</h2>
+					<ul>
+						<li>文娱行业</li>
+						<li>内容生产行业</li>
+						<li>物流行业</li>
+						<li>其他行业</li>
+					</ul>
+				</div>
+			</aside>
+		</main>
+	</div>
+
+	<section class="education">
+		<h2 class="after_line">教育经历</h2>
+		<p>华中师范大学 2018.9-2022.6</p>
+		<p>数据科学与大数据技术</p>
+		
+	</section>
+
+	<section class="skills">
+		<h2 class="after_line">技术栈</h2>
+		<table>
+      <thead>
+        <tr>
+
+          <th scope="col">分类</th>
+          <th scope="col">技术</th>
+          
+          <th scope="col">熟练程度</th>
+          <th scope="col">项目案例</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td scope="rowgroup" rowspan="4">编程语言</td>
+          <td scope="row">Java</td>
+          <td>熟悉Java语言特性，Java集合框架；熟悉JUC相关</td>
+          <td>熟练使用OOP；项目中实践过策略模式、过滤器模式、工厂模式；编写代码注重规范</td>
+        </tr>
+
+        <tr>
+          <td scope="row">Python</td>
+          <td>可以熟练写ETL脚本；使用Python开发过ETL监控程序，监控Airflow任务完成情况</td>
+          <td>编写中国大学Mooc爬虫程序，使用requests，支持分页爬取，爬取课程内容、主题贴、回复贴</td>
+        </tr>
+
+        <tr>
+          <td scope="row">HTML</td>
+          <td colspan="2">熟悉HTML基础</td>
+        </tr>
+        
+        <tr>
+          <td scope="row">CSS</td>
+          <td colspan="2">可以使用CSS进行页面设计，熟悉布局原理</td>
+        </tr>
+
+        <tr>
+          <td scope="rowgroup" rowspan="1">框架与库</td>
+          <td scope="row">Spring Boot</td>
+          <td>可以独立搭建公司项目，熟悉AOP、IOC等特性</td>
+          <td>区域车货匹配算法应用服务</td>
+        </tr>
+        
+        <tr>
+          <td scope="rowgroup" rowspan="3">数据库</td>
+          <td scope="row">MySQL</td>
+          <td colspan="2">熟悉索引和事务，熟悉事务的隔离级别，可以开发高并发应用</td>
+        </tr>
+
+        <tr>
+          <td scope="row">Redis</td>
+          <td>熟悉各种缓存策略的使用场景，Redis的数据结构、缓存淘汰和单线程模型都了解过</td>
+          <td>项目中频控模块设计使用Redis；使用Redis锁来保证接口的幂等；使用zset来排序动态列表。</td>
+        </tr>
+
+        <tr>
+          <td scope="row">MongoDB</td>
+          <td>理解文档数据库的优缺点；项目中有使用过基于spring-data-mongodb包的内部封装，支持字段转换、排序方式、截断</td>
+          <td>保存触达决策中的触达司机信息和决策上下文，这个场景适合使用MongoDB，因为Redis不适合存储大对象</td>
+        </tr>
+
+        <tr>
+          <td scope="rowgroup" rowspan="3">后端技术</td>
+          <td scope="row">RPC框架</td>
+          <td>知晓RPC间接通信的原理；了解接口注册配置中心的原理；了解项目中使用的一种RPC框架的本地注册</td>
+          <td>项目中使用的RPC框架是Pigeon</td>
+        </tr>
+
+        <tr>
+          <td scope="row">Kafka、RocketMQ</td>
+          <td>了解Kafka架构和消费偏移提交；了解消息幂等、消息丢失和消息重复的解决办法；可以使用消息中间件进行高并发功能场景下的架构设计。理解队列顺序消费和削峰填谷的作用</td>
+          <td>项目中埋点模块使用Kafka；线上业务使用RocketMQ延迟消息来进行轮次计算，监听其他应用的消息；</td>
+        </tr>
+
+        <tr>
+					<td scope="row">分布式事务</td>
+					<td colspan="2">了解分布式ID、分布式事务两段式提交</td>
+        </tr>
+
+        <tr>
+          <td scope="rowgroup" rowspan="3">前端技术（进击中）</td>
+          <td scope="row">HTML</td>
+          <td colspan="2">基础掌握，练习中</td>
+        </tr>
+        <tr>
+          <td scope="row">CSS</td>
+          <td colspan="2">基础掌握，练习中</td>
+        </tr>
+        <tr>
+          <td scope="row">VUE</td>
+          <td colspan="2">近期学习完Javascript后，计划学习</td>
+        </tr>
+
+        <tr>
+          <td scope="rowgroup" rowspan="3">DevOps</td>
+          <td scope="row">Linux</td>
+          <td colspan="2">熟悉Linux环境下的常见命令，可以编写shell脚本</td>
+        </tr>
+        <tr>
+          <td scope="row">Git</td>
+          <td colspan="2">常见的分支开发那一套规范，基本都一样</td>
+        </tr>
+        <tr>
+          <td scope="row">Docker</td>
+          <td colspan="2">会使用Dockerfile构建镜像和部署，可以结合git-wrapper进行开发和部署</td>
+        </tr>
+      </tbody>
+ 
+    </table>
+	</section>
+	
+	<section class="own_evaluation">
+		<h2 class="after_line">个人评价</h2>
+		<ul>
+			<li>参与实践的商业项目主要是在公司期间，另外会通过读专业经典书来精进专业。</li>
+			<li>希望通过读更多的书、理解更多事物，追求更成熟的世界观。</li>
+			<li>好奇心强，持续学习各方面成长。</li>
+			<li>目标驱动，抗压能力强，有较强的责任心。</li>
+		</ul>
+	</section>
+
+	<section class="data_analyse">
+		<h2 class="after_line">数据分析</h2>
+		<b>自己比较偏向于后端开发工作，但是也考虑合适的数据岗位工作，并不冲突，因为目标是通过做自己擅长的事情且为公司带来业务价值，同时自己获得回报和成长，岗位只是达成目标的路径，I need a chance!</b>
+		<p>业务专题分析</p>
+		<ul>
+			<li>分析货源订单取消行为，降低取消率。通过分析司机取消订单后的行为，识别订单取消的可能原因，推送一票新的货源给司机。负责策略测试、开发和监控。</li>
+			<li>分析中台客服促成交外呼行为，统计客服备注货源、外呼货主和外呼司机的次数，结合客服偏好，优化客服和CRM后台的交互，优化客服动作效率。</li>
+		</ul>
+		<p>指标开发</p>
+		<ul>
+			<li>SQL（之前不太喜欢单纯取数的工作内容，不太喜欢看几百行的SQL，会查下GPT修改SQL）</li>
+			<li>Python、Airflow</li>
+			<li>熟悉数仓分层理论</li>
+		</ul>
+		<p>实验设计</p>
+		<ul>
+			<li>AB实验</li>
+			<li>活动人群圈选和测算</li>
+		</ul>
+		<p>商业分析（工作中没涉及到电商相关分析，主要是结合网上的数据集分析的）</p>
+		<ul>
+			<li>ABC分析/帕累托分析</li>
+			<li>价格带分析</li>
+			<li>GMV拆解</li>
+			<li>商品复购分析</li>
+			<li>用户新增、活跃、留存、付费分析</li>
+			<li>问卷调研设计</li>
+		</ul>
+
+	</section>
+
+	
+
+</body>
+</html>
