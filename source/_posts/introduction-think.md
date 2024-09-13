@@ -20,7 +20,7 @@ https://liang200018.github.io/
 项目：主要是最近为了找工作展示简历，选择hexo主题，然后加上了[个人简历](https://liang200018.github.io/resume/index.html)模块。
 
 ### 爬虫项目
-![爬虫项目（私有仓库很久没整理了）](../imgs/spider.jpg)
+![爬虫项目（私有仓库很久没整理了）](/imgs/spider.JPG)
 项目：主要是爬取中国大学Mooc的课程主页，获取课程基本介绍和评论，分页抓取出Url后，再爬取主页。就是直接使用requests请求的，当时没有使用scrapy等框架。
 
 ### 其他项目
@@ -29,6 +29,7 @@ https://liang200018.github.io/
 ## 平常学习网站
 
 博客教程
+
 + [InfoQ](https://www.infoq.cn/)
 + [GeeksforGeeks](https://www.geeksforgeeks.org/)
 + [Mozilla](https://developer.mozilla.org/)
@@ -46,8 +47,8 @@ https://liang200018.github.io/
 ## 刷题情况
 牛客网站，偶尔会写一些题目
 主要是面试准备时会写一些。了解程度：链表、二分查找和排序、二叉树、堆/栈/队列、哈希、递归回溯、动态规划。时间没限制的情况下通过题目。
-![牛客面试Top](../imgs/practise_main.jpg)
-![牛客做题](../imgs/practise.jpg)
+![牛客面试Top](/imgs/practise_main.JPG)
+![牛客做题](/imgs/practise.JPG)
 
 ## 数据结构和常用设计模式
 
