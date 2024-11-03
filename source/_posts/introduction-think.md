@@ -6,6 +6,7 @@ categories:
 tags: 
 - 规划 
 - 个人介绍
+hide: true
 description: 你好，这是求职过程中，一份关于个人规划的简单介绍，如果觉得合适，欢迎联系我
 ---
 
